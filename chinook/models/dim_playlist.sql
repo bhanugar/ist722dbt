@@ -1,11 +1,6 @@
-with stg_playlist as (
+with stg_playlistt as (
     SELECT MIN(Playlistid) AS Playlistid, Name from {{ source('chinook', 'Playlist') }} GROUP BY Name
-),
-stg_playlisttrack as (
-    select Trackid, min(Playlistid) as Playlistid from {{ source('chinook', 'Playlisttrack') }} group by TrackId
 )
-select {{ dbt_utils.generate_surrogate_key(['pt.TrackId']) }} as trackkey, 
-        {{ dbt_utils.generate_surrogate_key(['pl.Playlistid']) }} as Playlistkey ,
-         pt.TrackId,pl.Playlistid,pl.Name as Playlist_Name 
-from stg_playlist pl 
-left join stg_playlisttrack pt on pt.Playlistid= pl.Playlistid
+select {{ dbt_utils.generate_surrogate_key(['p.Playlistid']) }} as Playlistkey,Playlistid, Name
+from stg_playlistt p 
+group by Playlistid,Name
