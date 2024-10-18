@@ -56,7 +56,8 @@ The project is organized as follows:
 
 BI tools, such as Power BI, were used to create dashboards and visualizations for decision-making. Dashboards allow users to explore data on sales trends, track popularity, and customer demographics. KPIs, such as total revenue and average order value, are prominently displayed, allowing users to track performance at a glance.
 
-
+![alt text](https://github.com/bhanugar/ist722dbt/blob/0ff0b0950c4deb44812ac3bd0d280dd78288e113/BI/powerbitwo.JPG)
+![alt text](https://github.com/bhanugar/ist722dbt/blob/0ff0b0950c4deb44812ac3bd0d280dd78288e113/BI/powerbi3.JPG)
 
 ### **Conclusion**
 By transforming the Chinook dataset into a structured data warehouse and developing BI solutions, this project enables comprehensive insights into the digital media store's performance. From sales analysis to customer behavior, the system provides robust tools for data-driven decision-making.
