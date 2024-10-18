@@ -1,11 +1,9 @@
 **Chinook Data Warehouse and Business Intelligence Solution**
 =============================================
 
-This repository contains the dimensional models for the Chinook database, implemented using dbt (Data Build Tool) and Snowflake. These models are designed to facilitate efficient querying and analysis of the Chinook database, which is a sample database representing a digital media store.
-
 **Introduction**
 -----------------
-The Chinook data model represents a digital media store with various interconnected entities, such as artists, albums, tracks, invoices, and customer data. The goal of this project is to transform the Chinook dataset into a structured data warehouse that enables advanced business intelligence (BI) solutions. This transformation allows for insightful analysis of the store's operations, including customer behaviors, sales performance, and media trends.
+The Chinook data model represents a digital media store with various interconnected entities, such as artists, albums, tracks, invoices, and customer data. The goal of this project is to transform the Chinook dataset into a structured data warehouse that enables advanced business intelligence (BI) solutions. This transformation allows for insightful analysis of the store's operations, including customer behaviors, sales performance, and media trends.This repository contains the dimensional models for the Chinook database, implemented using dbt (Data Build Tool) and Snowflake.
 
 Project Structure
 -----------------
